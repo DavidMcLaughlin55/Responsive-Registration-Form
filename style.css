@@ -16,6 +16,13 @@
     font-family: 'Saira Condensed', sans-serif;
 }
 
+input:focus, 
+select:focus,
+textarea:focus,
+button:focus {
+    background-color: var(--color5);
+}
+
 fieldset {
     border: none;
 }
@@ -25,7 +32,10 @@ legend {
     font-size: 1.5em;
     color: var(--color1);
     padding: 0.5em 0 0.2em;
-    text-shadow: 1px 0.5px 1px rgb(26, 25, 25);
+}
+
+p {
+    font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 ul {
@@ -39,15 +49,12 @@ li {
     flex-direction: column;
 }
 
-input[placeholder] {
-    padding-left: 0.5em;
+input {
+    padding:0.3em;
 }
 
-input:focus, 
-select:focus,
-textarea:focus,
-button:focus {
-    background-color: var(--color5);
+input[placeholder] {
+    padding-left: 0.5em;
 }
 
 .heading-pad {
@@ -56,15 +63,19 @@ button:focus {
 
 /* Form */
 
+.form-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 #form-title {
     background-color: var(--color1);
-    text-align: center;
     width: auto;
 }
 
 .banner {
     width: auto;
-    text-align: center;
     padding: 2em;
 }
 
@@ -79,6 +90,7 @@ button:focus {
     justify-content: space-between;
     flex-wrap: wrap;
     padding:1em;
+    text-align: left;
 }
 
 #contact-info {
@@ -119,7 +131,6 @@ label[class="pad-left"] {
     border: solid black 1px;
     border-radius: 0.2em;
     width: 89px;
-    text-align: center;
     padding: 0.5em;
     margin: 2em auto 1em;
 }
@@ -130,7 +141,6 @@ label[class="pad-left"] {
 }
 
 .copyright {
-    text-align: center;
     margin-bottom: 8em;
 }
 
