@@ -1,3 +1,14 @@
+/* Variables */
+:root {
+    --color1:#ffa86b;
+    --color2:#ffba78;
+    --color3:#ffcc84;
+    --color4:#ffd991;
+    --color5:#ffe69e;
+}
+
+/* Set-up */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,8 +16,134 @@
     font-family: 'Saira Condensed', sans-serif;
 }
 
+fieldset {
+    border: none;
+}
+
+legend {
+    width: 100%;
+    font-size: 1.5em;
+    color: var(--color1);
+    padding: 0.5em 0 0.2em;
+    text-shadow: 1px 0.5px 1px rgb(26, 25, 25);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+input[placeholder] {
+    padding-left: 0.5em;
+}
+
+input:focus, 
+select:focus,
+textarea:focus,
+button:focus {
+    background-color: var(--color5);
+}
+
+.heading-pad {
+    padding: 1em;
+}
+
+/* Form */
+
+#form-title {
+    background-color: var(--color1);
+    text-align: center;
+    width: auto;
+}
+
+.banner {
+    width: auto;
+    text-align: center;
+    padding: 2em;
+}
+
+.hr-1,
+.hr-2 {
+    margin: 0.2em 7% 0;
+}
+
+#cr-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1em;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    padding:1em;
+}
+
+.hr-3 {
+    margin: 1.5em 0 1.5em;
+}
+
+#news-subscription {
+    display:flex;
+    flex-direction: column;
+    padding:0 1em 0;
+}
+
+#news-subscription p{
+    margin: 1em 0 1em;
+}
+
+.checkbox, .radio {
+    margin: 0.3em 0 0.3em;
+    display:flex;
+    justify-content: flex-start;
+}
+
+label[class="pad-left"] {
+    padding-left: 1em;
+}
+
+.btn {
+    background-color: var(--color1);
+    transition: background-color 0.5s;
+    color: black;
+    font-weight: bold;
+    border: solid black 1px;
+    border-radius: 0.2em;
+    width: 89px;
+    text-align: center;
+    padding: 0.5em;
+    margin: 2em auto 1em;
+}
+
+.btn:hover {
+    cursor:pointer;
+    background-color: var(--color5);
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 8em;
+}
+
 /* Media Query */
 
 @media (min-width: 768px) {
-    
+    #cr-form {
+        margin: 0 25% 0;
+    }
+
+    .hr-1,  
+    .hr-2 {
+        margin: 0.2em 27% 0;
+    }
+
 }
