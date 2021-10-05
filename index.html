@@ -12,18 +12,20 @@
     <title>Responsive Registration Form</title>
 </head>
 <body>
+<!--Header-->    
+    <header id="form-title">
+        <h1>The Code Review</h1>
+    </header>
+<!--Form -->
     <div class="form-container">
-    <!--Header-->    
-        <header id="form-title" class="heading-pad">
-            <h1>The Code Review</h1>
-        </header>
-        <div class="banner heading-pad">
+        <section class="banner">
             <h2>Signup for our newsletter</h2>
-            <p>Get the latest news on how your code is doing right in your inbox</p>
-        </div>
-        <hr class="hr-1">
-        <hr class="hr-2">
-    <!--Form -->
+            <p>Get the latest news on how your code is doing right in your inbox</p>  
+        </section>  
+
+        <hr>
+        <hr> 
+        
         <form id="cr-form" action="required" method="get">
             <fieldset id="contact-info">
                 <legend>Contact Information</legend>
@@ -112,7 +114,7 @@
                 </ul>
             </fieldset>
 
-            <hr class="hr-3">
+            <hr>
 
             <fieldset id="news-subscription">
                 <legend>Newsletter</legend>
@@ -147,7 +149,7 @@
 
             <button class="btn">Sign Up</button>
         </form>
-        <p class="copyright heading-pad">&copy; The Code Review</p>
+        <p class="copyright">&copy; The Code Review</p>
     </div>
 </body>
 </html>

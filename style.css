@@ -36,6 +36,7 @@ legend {
 
 p {
     font-family: 'Saira Semi Condensed', sans-serif;
+    margin: 1em 0 1em;
 }
 
 ul {
@@ -47,6 +48,7 @@ ul {
 li {
     display: flex;
     flex-direction: column;
+    padding: 0 0 0.5em;
 }
 
 input {
@@ -57,8 +59,10 @@ input[placeholder] {
     padding-left: 0.5em;
 }
 
-.heading-pad {
-    padding: 1em;
+hr:nth-of-type(odd) {
+    text-align: left;
+    margin: 1em 0 1em;
+    justify-self: space-between;
 }
 
 /* Form */
@@ -67,21 +71,18 @@ input[placeholder] {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 0 10% 0;
 }
 
 #form-title {
     background-color: var(--color1);
     width: auto;
+    padding: 1.5em;
+    text-align: center;
 }
 
 .banner {
-    width: auto;
-    padding: 2em;
-}
-
-.hr-1,
-.hr-2 {
-    margin: 0.2em 7% 0;
+    padding:2em;
 }
 
 #cr-form {
@@ -89,28 +90,18 @@ input[placeholder] {
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding:1em;
     text-align: left;
 }
 
 #contact-info {
     display: flex;
     flex-direction: column;
-    padding:1em;
-}
-
-.hr-3 {
-    margin: 1.5em 0 1.5em;
+    padding: 1em 0 1em;
 }
 
 #news-subscription {
     display:flex;
     flex-direction: column;
-    padding:0 1em 0;
-}
-
-#news-subscription p{
-    margin: 1em 0 1em;
 }
 
 .checkbox, .radio {
@@ -147,13 +138,15 @@ label[class="pad-left"] {
 /* Media Query */
 
 @media (min-width: 768px) {
-    #cr-form {
+    .form-container {
         margin: 0 25% 0;
     }
 
-    .hr-1,  
-    .hr-2 {
-        margin: 0.2em 27% 0;
+    h1 {
+        font-size: 3em;
     }
 
+    .banner {
+        font-size: 1.5em;
+    }
 }
